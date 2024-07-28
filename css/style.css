@@ -1,0 +1,73 @@
+body {
+    display:flex;
+    flex-direction:column;
+    background-color: #1F2937;
+    color:white;
+    height:100vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    border-radius: 5px;
+    background-color:#3882F6;
+    color:white;
+    width:5vw;
+    height:3vh;
+}
+
+.header, #projects, #contact, #quote {
+    flex:1;
+}
+
+.header {
+    display:flex;
+    justify-content:center;
+
+    padding :20px;
+
+    color:#F9FAF8;
+}
+
+.header .left, .header .right {
+    width:30vw;
+}
+
+.right {
+    display:flex;
+    flex-direction: column;
+}
+
+.header .logo{
+    font-size:24px;
+    margin-bottom:8vh;
+}
+
+.header .header-text {
+    font:42px extra-bold;
+    margin-bottom:4vh;
+}
+
+.header .sub-text {
+    margin-bottom:2vh;
+    opacity: .7;
+}
+
+.header ul{
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    gap:32px;
+
+    margin: 0;
+    padding:0;
+    margin-bottom:8vh;
+}
+
+.header button {
+    border-width: 0;
+}
+
