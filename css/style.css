@@ -3,7 +3,7 @@ body {
     flex-direction:column;
     background-color: #1F2937;
     color:white;
-    height:100vh;
+    height:200vh;
 }
 
 a {
@@ -12,62 +12,199 @@ a {
 }
 
 button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
     background-color:#3882F6;
     color:white;
+
+    font-size:1vw;
     width:5vw;
     height:3vh;
 }
 
-.header, #projects, #contact, #quote {
+.main, #projects, #contact, #quote {
     flex:1;
 }
 
+/* Header Styling */
+
 .header {
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
 
-    padding :20px;
+    padding :24px;
 
     color:#F9FAF8;
-}
-
-.header .left, .header .right {
-    width:30vw;
-}
-
-.right {
-    display:flex;
-    flex-direction: column;
-}
-
-.header .logo{
-    font-size:24px;
-    margin-bottom:8vh;
-}
-
-.header .header-text {
-    font:42px extra-bold;
-    margin-bottom:4vh;
-}
-
-.header .sub-text {
-    margin-bottom:2vh;
-    opacity: .7;
 }
 
 .header ul{
     list-style: none;
     display:flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap:32px;
 
     margin: 0;
     padding:0;
-    margin-bottom:8vh;
 }
 
-.header button {
+
+.header .logo{
+    font-size:24px;
+    margin:0;
+    padding:0;
+}
+
+/* Main Landing Page Styling */
+
+.main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.main .main-text {
+    padding:3vw;
+}
+
+.main .header-text {
+    font:42px extra-bold;
+    margin-bottom:4vh;
+}
+
+.main .sub-text {
+    margin-bottom:2vh;
+    opacity: .7;
+}
+
+.main button {
     border-width: 0;
 }
 
+.main img {
+    border-radius: 5px;
+    margin:5%;
+    border: 5px solid #E5E7EB;
+}
+
+/* Projects Section Styling */
+
+#projects {
+    display:flex;
+    flex-direction:column;
+    background-color: white;
+    color:#1F2937;
+
+    padding:24px;
+    gap:5%;
+}
+
+#projects .header-text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 36px;
+    font-weight: extra-bold;
+}
+
+#projects .project-cards {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:5%;
+
+}
+
+#projects .project {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:2vh;
+
+}
+
+#projects .project img {
+    border: 5px solid #3882F6;
+    border-radius: 20px;
+}
+
+/* Quote Section Styling */
+
+#quote {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E7EB;
+    color:#1F2937;
+}
+
+#quote .quote-text {
+    max-width:80vw;
+}
+
+#quote .quote {
+    display: flex;
+    align-items: center;
+    flex:1;
+    font:36px light italic;
+
+}
+
+#quote .author {
+    flex:1;
+    display:flex;
+    justify-content: flex-end;
+    margin:1vh;
+}
+
+/* Contact Section Styling */
+
+#contact {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color:white;
+}
+
+
+#contact .contact-box {
+    max-width:75vw;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:#3882F6;
+    padding:2%;
+    border: 1px solid;
+    border-radius: 1vh;
+    gap:1vw;
+}
+
+#contact .header-text {
+    display:flex;
+    font:2vw extra-bold white;
+}
+
+#contact .sub-text {
+    font:1vw extra-bold white;
+}
+
+.contact-button {
+    border: 1px solid;
+    border-color:white;
+}
+
+/* Footer Styling */
+
+.footer {
+    text-align: center;
+    margin:1vw;
+}
